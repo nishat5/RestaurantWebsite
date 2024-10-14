@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: poppins;
+}
+
+/* Header Section Css Style */
+
+.wrapper {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper .header {
+  width: 100%;
+  height: 270px;
+  background-color: rgb(57, 68, 68);
+  background-image: linear-gradient(rgba(42, 41, 41, 0.9), rgba(0, 0, 0, 0.9)),
+    url("./Images/zinger.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Navbar Styling */
+
+.wrapper .header .navbar {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 18px 0px;
+  position: relative;
+}
+
+.navbar-brand {
+  color: #fea115;
+  cursor: pointer;
+}
+
+.navbar-brand h2 {
+  font-size: 24px;
+}
+
+.header .navbar ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.header .navbar ul li {
+  padding: 0 5px;
+}
+
+.header .navbar ul li a {
+  color: white;
+}
+
+#menuList .home-link a {
+  color: white;
+}
+
+#menuList .contact-link a {
+  color: #fea115;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+.hamburger-icon i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.booking-btn {
+  color: white !important;
+  /* font-weight: bold; */
+  background-color: #fea116;
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+
+.headerMainDiv {
+  /* border: 1px solid white; */
+  text-align: center;
+  margin-top: 110px;
+  color: white;
+}
+
+.headerInnerDiv a {
+  padding: 0px 2px;
+  color: white;
+  /* font-size: 14px; */
+}
+/* Contact Us Form Styling Started  */
+
+/* .contactFormWrapper {
+  height: 450px;
+  border: 1px solid red;
+  background-image: url(./Images/map.png);
+  background-repeat: no-repeat;
+} */
+
+.contactFormWrapper {
+  margin: 40px auto;
+  text-align: center;
+  width: 80%;
+}
+
+.emailsMainDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  margin: 15px 0;
+}
+
+.emailsMainDiv .emailsInnerDiv {
+  width: 300px;
+  align-content: center;
+}
+
+.contactUsText {
+  font-family: "Brush Script MT", cursive;
+  font-size: 26px;
+  color: #fea115;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.emailsInnerDiv a {
+  color: black;
+  font-size: 15px;
+}
+
+.emailsInnerDiv .fa-envelope {
+  color: #fea115;
+}
+
+.emailsPara {
+  font-family: "Brush Script MT", cursive;
+  font-size: 21px;
+  color: #fea115;
+  letter-spacing: 0.5px;
+  /* text-align: left; */
+}
+
+.contactFormDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* height: 180px; */
+}
+
+.contactFormInner {
+  height: 290px;
+  width: 450px;
+  align-content: center;
+}
+
+.contactFormWrapper .contactFormImg {
+  background-image: url("./Images/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactFormInputs {
+  /* border: 1px solid red; */
+  padding: 0px 5px;
+}
+
+.contactFormInputs .input1,
+.input2,
+.subjectInput,
+textarea {
+  border: 1px solid silver;
+}
+
+.nameEmailinput {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.nameEmailinput .input1,
+.input2 {
+  width: 45%;
+  padding: 6px 6px;
+}
+
+.subjectInputDiv {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.subjectInputDiv .subjectInput {
+  width: 100%;
+  padding: 6px 6px;
+}
+
+.textArea {
+  width: 100%;
+  height: 130px;
+  padding: 6px 6px;
+}
+
+.sendMessageBtn {
+  display: block;
+  padding: 7px 6px;
+  width: 100%;
+  background-color: #fea115;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer Section Styling Started */
+
+.footerWrapper {
+  background-color: #272f41;
+  color: white;
+}
+.footerMainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.footerMainDiv .footerDiv {
+  height: 40px;
+  align-content: center;
+}
+
+.footerList {
+  display: flex;
+}
+.footerList .footerListItem {
+  color: white;
+  margin: 0px 5px;
+}
+
+.contactHeaderLink {
+  color: #fea115;
+}
+
+@media (max-width: 885px) {
+  /* Navigation Bar Responsive */
+
+  .wrapper .header .navbar {
+    background-color: #272f41;
+    padding: 0px 10px;
+    align-items: center;
+  }
+
+  .header .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 42px;
+    left: 0px;
+    right: 0;
+    width: 100%;
+    gap: 0;
+    overflow: hidden;
+    background-color: #272f41;
+    padding: 3px 0px;
+    /* display: none; */
+  }
+
+  .header .navbar ul li {
+    padding: 7px 10px;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  #menuList {
+    transition: all 0.5s;
+    max-height: 200px;
+  }
+
+  /* Header Cards Styling */
+  .header-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-cards .items {
+    width: 70%;
+    height: 300px;
+    align-content: space-around;
+    margin-top: 5px;
+  }
+
+  /* Contact Form Responsive  */
+  .nameEmailinput {
+    flex-direction: column;
+  }
+
+  .nameEmailinput .input1,
+  .input2 {
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  /* Footer Section Responsive Coding  */
+  .footerMainDiv {
+    flex-direction: column;
+  }
+
+  .footerMainDiv .footerDiv {
+    height: 26px;
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="icon" href="Images/titleLogo.png" type="image/icon type" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <h2><i href="#" class="fa-solid fa-cutlery"></i> Restoran</h2>
+          </div>
+          <ul id="menuList">
+            <li class="home-link"><a href="index.html">Home</a></li>
+            <li class="contact-link"><a href="#">Contact</a></li>
+            <li class="">
+              <a href="#reservationSection" class="booking-btn">Book a Table</a>
+            </li>
+          </ul>
+
+          <div class="hamburger-icon">
+            <i href="#" onclick="navToggler()" class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+
+        <div class="headerMainDiv">
+          <!-- <div class="headerInnerDiv"> -->
+          <h1>Contact Us</h1>
+          <!-- </div> -->
+          <div class="headerInnerDiv">
+            <a href="#">Home</a> /
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us Form Section Code Started  -->
+
+      <div class="contactFormWrapper">
+        <p class="contactUsText">── Contact Us ──</p>
+        <h2>Contact For Any Query</h2>
+        <div class="emailsMainDiv">
+          <div class="emailsInnerDiv">
+            <p class="emailsPara">Booking ──</p>
+            <a href="#"
+              ><i href="#" class="fa fa-envelope"></i> booking@example.com</a
+            >
+          </div>
+          <div class="emailsInnerDiv">
+            <p class="emailsPara">General ──</p>
+            <a href="#"
+              ><i href="#" class="fa fa-envelope"></i> general@example.com</a
+            >
+          </div>
+          <div class="emailsInnerDiv">
+            <p class="emailsPara">Technical ──</p>
+            <a href="#"
+              ><i href="#" class="fa fa-envelope"></i> technical@example.com</a
+            >
+          </div>
+        </div>
+        <div class="contactFormDiv">
+          <div class="contactFormInner contactFormImg"></div>
+          <div class="contactFormInner contactFormInputs">
+            <form id="myForm">
+              <div class="nameEmailinput">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  id="name"
+                  class="input1"
+                  maxlength="50"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  id="email"
+                  class="input2"
+                  required
+                />
+              </div>
+              <div class="subjectInputDiv">
+                <input
+                  type="text"
+                  class="subjectInput"
+                  id="subject"
+                  maxlength="100"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div style="text-align: left">
+                <textarea
+                  maxlength="250"
+                  class="textArea"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="sendMessageBtn"
+                onclick="contactUsForm()"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section Code Started  -->
+      <div class="footerWrapper">
+        <div class="footerMainDiv">
+          <div class="footerDiv">
+            <p>© Restoran, All Rights Reserved.</p>
+          </div>
+          <div class="footerDiv">
+            <ul class="footerList">
+              <li><a href="#" class="footerListItem">Home</a></li>
+              <li>
+                <a href="#" class="footerListItem contactHeaderLink">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

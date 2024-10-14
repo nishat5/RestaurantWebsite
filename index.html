@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="Images/titleLogo.png" type="image/icon type" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Restoran</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header" id="#headerId">
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <h2><i href="#" class="fa-solid fa-cutlery"></i> Restoran</h2>
+          </div>
+          <ul id="menuList">
+            <li class="home-link"><a href="#menu-cards-section">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="">
+              <a href="#reservationSection" class="booking-btn">Book a Table</a>
+            </li>
+          </ul>
+          <div class="hamburger-icon">
+            <i href="#" onclick="navToggler()" class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <div class="header-cards">
+          <div class="items">
+            <h1 class="headerText headerHeading">Enjoy Our</h1>
+            <h1 class="headerText headerHeading">Delicious Meal</h1>
+            <p class="headerText">
+              A restaurant is a business that prepares and serves food and
+              drinks to customers. Meals are generally served and eaten on the
+              premises.
+            </p>
+            <div style="margin-top: 20px">
+              <a class="headercardBtn header-booking-btn" href="#"
+                >Book a Table</a
+              >
+            </div>
+          </div>
+          <div class="items image">
+            <!-- <img src="./Images/pizaa.png" alt="Pizza" class="responsive" /> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Cards coding -->
+      <div class="menu-cards" id="menu-cards-section">
+        <div class="card-body">
+          <div class="menu-icons">
+            <i href="#" class="fa-solid fa-cutlery x"></i>
+          </div>
+          <h3 class="card-title">Master Chefs</h3>
+          <p class="card-text">
+            A restaurant is a business that prepares and serves food and drinks
+            to customers.
+          </p>
+        </div>
+        <div class="card-body">
+          <div class="menu-icons">
+            <i href="#" class="fa-solid fa-coffee"></i>
+          </div>
+          <h3 class="card-title">Quality Food</h3>
+          <p class="card-text">
+            A restaurant is a business that prepares and serves food and drinks
+            to customers.
+          </p>
+        </div>
+        <div class="card-body">
+          <div class="menu-icons">
+            <i href="#" class="fa-solid fa-shopping-cart"></i>
+          </div>
+          <h3 class="card-title">Online Order</h3>
+          <p class="card-text">
+            A restaurant is a business that prepares and serves food and drinks
+            to customers.
+          </p>
+        </div>
+        <div class="card-body">
+          <div class="menu-icons">
+            <i href="#" class="fa-solid fa-headphones"></i>
+          </div>
+          <h3 class="card-title">24/7 Service</h3>
+          <p class="card-text">
+            A restaurant is a business that prepares and serves food and drinks
+            to customers.
+          </p>
+        </div>
+      </div>
+
+      <!-- About Us Section Code  -->
+
+      <!-- <div class="aboutUs-wrapper"> -->
+      <div class="aboutUs-innerWrapper">
+        <div class="about-imgDiv">
+          <div>
+            <img src="./Images/hotle2.jpg" width="150px" height="80" />
+            <!-- <img src="./Images/hotle2.jpg" width="100px"
+                height="80" /> -->
+          </div>
+          <!-- <div>
+                <img src="./Images/hotle2.jpg" width="100px"
+                height="80" />
+                <img src="./Images/hotle2.jpg" width="140px"
+                height="130" />
+            </div> -->
+        </div>
+
+        <div class="about-welcomeDiv">
+          <h3 class="welcomeDiv-header1">About Us ──</h3>
+          <h2 class="welcomeDiv-header2">
+            Welcome to
+            <span>
+              <i
+                href="#"
+                class="fa-solid fa-cutlery"
+                style="color: #fea115"
+              ></i>
+            </span>
+            Restoran
+          </h2>
+          <p class="para1">
+            A restaurant is a business that prepares and serves food and drinks
+            to customers.
+          </p>
+          <p class="para2">
+            A restaurant is a business that prepares and serves food and drinks
+            to customers. A restaurant is a business that prepares.
+          </p>
+          <div class="experienceDiv">
+            <div class="experienceDiv-content">
+              <h3 class="heading">13</h3>
+              <div class="">
+                <span class="headingSpan">Years of</span>
+                <p class="">
+                  <b>Experience</b>
+                </p>
+              </div>
+            </div>
+            <div class="experienceDiv-content">
+              <h3 class="heading">50</h3>
+              <div class="headingSpan">
+                <span clas="">Popular</span>
+                <p class="">
+                  <b>Master Chefs</b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="aboutBookingBtn booking-btn"> Read More </a>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- Food Menu Code Started -->
+
+      <div class="foodMenuWrapper">
+        <h3 class="foodMenuText">── Food Menu ──</h3>
+        <h1 class="foodMenuText2">Most Popular Items</h1>
+        <div class="foodMenuDiv">
+          <div
+            class="foodMenuDiv-content"
+            id="breakfastBtnId"
+            onclick="breakfastMenu()"
+          >
+            <div>
+              <i href="#" class="fa-solid fa-coffee icon"></i>
+            </div>
+            <div class="">
+              <span class="foodMenuSpan">Popular</span>
+              <h5 class="">
+                <b>Breakfast</b>
+              </h5>
+            </div>
+          </div>
+          <div
+            class="foodMenuDiv-content"
+            id="lunchBtnId"
+            onclick="lunchMenu()"
+          >
+            <div><i href="#" class="fa-solid fa-cutlery icon"></i></div>
+            <div class="">
+              <span class="foodMenuSpan">Special</span>
+              <h5 class="">
+                <b>Lunch</b>
+              </h5>
+            </div>
+          </div>
+          <div
+            class="foodMenuDiv-content"
+            id="dinnerBtnId"
+            onclick="dinnerMenu()"
+          >
+            <div>
+              <i href="#" class="fa-solid fa-coffee icon"></i>
+            </div>
+            <div class="">
+              <span class="foodMenuSpan">Lovely</span>
+              <h5 class="">
+                <b>Dinner</b>
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="tableWrapper">
+          <!-- ============BREAKFAST MENU ITEMS ==================-->
+
+          <!-- <div id="breakfastItems"> -->
+          <!-- Menu Left Div -->
+          <div class="tableWrapperDiv breakfastItems">
+            <table style="width: 100%">
+              <!-- 1st item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                    class="foodMenuImg"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+              <!-- 2nd item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Third Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fourth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fifth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Menu Right Div  -->
+          <div class="tableWrapperDiv breakfastItems">
+            <table style="width: 100%">
+              <!-- 1st item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                    class="foodMenuImg"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+              <!-- 2nd item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Third Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fourth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fifth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/zinger.jpg"
+                    alt="zinger"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- </div> -->
+          <!--==================== LUNCH MENU ITEMS ==================-->
+
+          <!-- <div id="lunchItems"> -->
+          <!-- Menu Left Div -->
+          <div class="tableWrapperDiv lunchItems">
+            <table style="width: 100%">
+              <!-- 1st item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                    class="foodMenuImg"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+              <!-- 2nd item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Third Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fourth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Chicken Burger</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fifth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Menu Right Div  -->
+          <div class="tableWrapperDiv lunchItems">
+            <table style="width: 100%">
+              <!-- 1st item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                    class="foodMenuImg"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+              <!-- 2nd item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Third Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fourth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fifth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Special Biryani</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+            </table>
+          </div>
+          <!-- </div> -->
+          <!--==================== DINNER MENU ITEMS ====================-->
+
+          <!-- Menu Left Div -->
+          <div class="tableWrapperDiv dinnerItems">
+            <table style="width: 100%">
+              <!-- 1st item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                    class="foodMenuImg"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+              <!-- 2nd item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Third Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fourth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fifth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Menu Right Div  -->
+          <div class="tableWrapperDiv dinnerItems">
+            <table style="width: 100%">
+              <!-- 1st item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                    class="foodMenuImg"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+              <!-- 2nd item -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Third Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fourth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+
+              <!-- Fifth Item  -->
+              <tr style="padding: 30px 5px">
+                <td rowspan="2">
+                  <img
+                    src="./Images/biryani.JPG"
+                    alt="biryani"
+                    width="110px"
+                    height="90px"
+                  />
+                </td>
+                <td style="border-bottom: 1px solid rgb(225, 221, 221)">
+                  <h3>Mutton Curry</h3>
+                </td>
+                <td
+                  style="
+                    text-align: right;
+                    border-bottom: 1px solid rgb(225, 221, 221);
+                  "
+                >
+                  <h3 class="price">$115</h3>
+                </td>
+              </tr>
+              <tr>
+                <td class="tablePara">
+                  Lorem ipsum dolor sit amet consectetur
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reservation Section Code Started -->
+      <div class="reservationWrapper" id="reservationSection">
+        <div class="reservationDiv reservationImg"></div>
+        <div class="reservationDiv">
+          <h3 class="reservationtext1">Reservation ──</h3>
+          <h1 class="reservationtext2">Book A Table Online</h1>
+          <form id="myForm">
+            <div class="reservationForm">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  id="name"
+                  required
+                  maxlength="50"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Date & Time"
+                  id="date"
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="No. of People"
+                  id="people"
+                  required
+                />
+                <!-- <select id="select">
+                  <option>No. of People</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select> -->
+                <!-- <input type="email" placeholder="Your Email" /> -->
+              </div>
+              <textarea placeholder="Special Request" maxlength="50"></textarea>
+              <button
+                type="submit"
+                class="reservationBtn"
+                onclick="reservationConfirmed()"
+              >
+                Book Now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Team Member Section Code Started  -->
+      <div class="teamMemberWrapper">
+        <p class="teamMemberText">── Team Members ──</p>
+        <h1 class="teamMemberText2">Our Master Chefs</h1>
+        <div class="membersProfileDiv">
+          <div class="membersProfile">
+            <!-- <div class="membersProfileImg"> -->
+            <img
+              src="./Images/chef3.jpg"
+              alt="member1"
+              class="profileImgResponsive"
+            />
+            <!-- </div> -->
+            <h3 class="memberName">Hazel Amelia</h3>
+            <p class="memberDesig">Designation</p>
+            <div class="memberIconsDiv">
+              <i href="#" class="fa fa-facebook memberIcon"></i>
+              <i href="#" class="fa fa-twitter memberIcon"></i>
+              <i href="#" class="fa fa-instagram memberIcon"></i>
+            </div>
+          </div>
+          <div class="membersProfile">
+            <!-- <div class="membersProfileImg"> -->
+            <img
+              src="./Images/chef.jpg"
+              alt="member1"
+              class="profileImgResponsive"
+            />
+            <!-- </div> -->
+            <h3 class="memberName">Hazel Amelia</h3>
+            <p class="memberDesig">Designation</p>
+            <div class="memberIconsDiv">
+              <i href="#" class="fa fa-facebook memberIcon"></i>
+              <i href="#" class="fa fa-twitter memberIcon"></i>
+              <i href="#" class="fa fa-instagram memberIcon"></i>
+            </div>
+          </div>
+          <div class="membersProfile">
+            <!-- <div class="membersProfileImg"> -->
+            <img
+              src="./Images/chef.jpg"
+              alt="member1"
+              class="profileImgResponsive"
+            />
+            <!-- </div> -->
+            <h3 class="memberName">Hazel Amelia</h3>
+            <p class="memberDesig">Designation</p>
+            <div class="memberIconsDiv">
+              <i href="#" class="fa fa-facebook memberIcon"></i>
+              <i href="#" class="fa fa-twitter memberIcon"></i>
+              <i href="#" class="fa fa-instagram memberIcon"></i>
+            </div>
+          </div>
+          <div class="membersProfile">
+            <!-- <div class="membersProfileImg"> -->
+            <img
+              src="./Images/chef3.jpg"
+              alt="member1"
+              class="profileImgResponsive"
+            />
+            <!-- </div> -->
+            <h3 class="memberName">Hazel Amelia</h3>
+            <p class="memberDesig">Designation</p>
+            <div class="memberIconsDiv">
+              <i href="#" class="fa fa-facebook memberIcon"></i>
+              <i href="#" class="fa fa-twitter memberIcon"></i>
+              <i href="#" class="fa fa-instagram memberIcon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial Section Code Started  -->
+      <div class="testimonialWrapper">
+        <h3 class="text1">── Testimonials ──</h3>
+        <h1 class="text2">Our Clients Say!!!</h1>
+        <div class="testimonialDiv">
+          <div class="testimonialCards">
+            <i href="#" class="fa-solid fa-quote-left testmo-icon"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+              inventore.
+            </p>
+            <div class="clientDetails">
+              <!-- <div> -->
+              <img
+                src="./Images/nishu.jfif"
+                alt="client"
+                width="60px"
+                height="60px"
+                class="clientImg"
+              />
+              <!-- </div> -->
+              <div>
+                <h3>Nishat Haider</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonialCards">
+            <i href="#" class="fa-solid fa-quote-left testmo-icon"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+              inventore.
+            </p>
+            <div class="clientDetails">
+              <!-- <div> -->
+              <img
+                src="./Images/team.jpg"
+                alt="client"
+                width="60px"
+                height="60px"
+                class="clientImg"
+              />
+              <!-- </div> -->
+              <div>
+                <h3>John Doe</h3>
+                <p class="professionText">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonialCards">
+            <i href="#" class="fa-solid fa-quote-left testmo-icon"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+              inventore.
+            </p>
+            <div class="clientDetails">
+              <!-- <div> -->
+              <img
+                src="./Images/team1.jpg"
+                alt="client"
+                width="60px"
+                height="60px"
+                class="clientImg"
+              />
+              <!-- </div> -->
+              <div>
+                <h3>Katherine Corly</h3>
+                <p>Front End Developer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section Code Started  -->
+      <div class="footerWrapper">
+        <div class="footerMainDiv">
+          <div class="footerDiv">
+            <p>© Restoran, All Rights Reserved.</p>
+          </div>
+          <div class="footerDiv">
+            <ul class="footerList">
+              <li><a href="#" class="footerListItem">Home</a></li>
+              <li><a href="#" class="footerListItem">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Btn Code Started -->
+    <a href="#" class="scrollbutton" id="scrollbuttonid">
+      <i href="#headerId" class="fa-solid fa-arrow-up arrowIcon"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
